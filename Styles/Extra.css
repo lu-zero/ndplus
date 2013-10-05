@@ -1,0 +1,154 @@
+/*
+ *  Extra Style Sheet, Version 1.02
+ *
+ *  This file is part of Natural Docs++, Copyright (C) 2007-2013 Adam Young
+ */
+
+/*
+ * Ditaa/CMscgen/CSdedit
+ */
+.CDitaa {
+        text-align: center;
+        margin: 1em 0;
+}
+
+.CMscgen {
+        text-align: center;
+        margin: 1em 0;
+}
+
+.CSdedit {
+        text-align: center;
+        margin: 1em 0;
+}
+
+
+/*
+ * Tables
+ */
+.CTable {
+        margin: 1.5em 5ex 0 5ex;
+}
+
+.TBody {
+        border: 2px solid #A0A0A0;
+        width: 95%;
+}
+
+#IE .TBody {
+        width: 95%;
+}
+
+.TCaption {
+        font-size: 14pt;
+        color: #0; background-color: #69c;
+        padding: 10px 15px 10px 15px;
+        border-width: 2px 0; border-color: #000000;
+        margin-left: 0; margin-right: 0
+}
+
+.TRow {
+        font-size: 12pt;
+        border: 1px solid #A0A0A0;
+}
+
+.TRow .THead {
+        color: #FFFFFF; background-color: #C0C0C0;
+        border: 1px solid #A0A0A0;
+        text-align: center;
+        valign: middle;
+}
+
+.TRow .TNormal {
+        color: #000000; background-color: #FFFFFF;
+        border: 1px solid #A0A0A0;
+        text-align: left;
+        valign: top;
+}
+
+.TRow .TNull {
+        color: #FFFFFF; background-color: #FFFFFF;
+        border: 1px solid #A0A0A0;
+}
+
+.TTitle {
+        font-size: 12pt; font-weight: bold; font-variant: small-caps;
+        padding: 5px 10px 15px 10px;
+        text-align: center;
+        border-bottom: 1px dotted #000000;
+        margin-bottom: 15px
+}
+
+
+/*
+ * Admonition's
+ */
+.CAdmonition {
+        margin: 0.75em 3em;
+        border-radius: 6px 6px 6px 6px;
+        width: 85%;
+        padding: 1ex;
+        margin-bottom: 2em;
+}
+
+.CAdmonition-Note {
+        color: rgb(34, 34, 34);
+        border: 1px solid rgb(204, 204, 204);
+        background: none repeat scroll 0% 0% rgb(238, 238, 238);
+}
+
+.CAdmonition-Tip {
+        color: rgb(0, 79, 0);
+        background: none repeat scroll 0% 0% rgb(216, 236, 214);
+        border: 1px solid green;
+}
+
+.CAdmonition-Important {        /*red on white*/
+        font-style: italic;
+        border-width: 1px 1px 1px 12px;
+        border-style: solid;
+        border-color: rgb(170, 0, 0) rgb(170, 0, 0) rgb(170, 0, 0) rgb(204, 0, 0);
+                -moz-border-top-colors: none;
+                -moz-border-right-colors: none;
+                -moz-border-bottom-colors: none;
+                -moz-border-left-colors: none;
+        border-image: none;
+}
+
+.CAdmonition-Warning {          /*lite-read*/
+        color: rgb(159, 19, 19);
+        background: none repeat scroll 0% 0% rgb(248, 232, 232);
+        border: 1px solid rgb(229, 149, 149);
+}
+
+.CAdmonition-Caution {          /*amber*/
+        font-style: italic;
+        border-width: 1px 1px 1px 12px;
+        border-style: solid;
+        border-color: #FFBF00;
+                -moz-border-top-colors: none;
+                -moz-border-right-colors: none;
+                -moz-border-bottom-colors: none;
+                -moz-border-left-colors: none;
+        border-image: none;
+}
+
+.CAdmonition-Example {
+     /*khaki*/
+        /* background: none repeat scroll 0% 0% rgb(254, 253, 230); */
+        /* border: 1px solid rgb(241, 187, 22); */
+     /*blue,azure2*/
+        background: none repeat scroll 0% 0% #E0EEEE;
+        border: 1px solid rgb(0, 70, 137);
+        margin: 1em 0px;
+        padding: 0.2em 2em;
+}
+
+.CAdmonition .CHeading {
+        display: inline;
+        border-style: none;
+        line-height: 1;
+        margin-right: 0px;
+}
+
+/*eof*/

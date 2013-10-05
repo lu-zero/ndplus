@@ -1,0 +1,31 @@
+
+Section:        JaveScript Source Information
+
+                      ---------------------------------
+
+Topic:          SyntaxHighlighter
+
+        SyntaxHighlighter version 3.0.83
+
+        http://alexgorbatchev.com/SyntaxHighlighter/
+
+    license:
+
+        You may use any SyntaxHighlighter project under the terms of either
+        the MIT License or the GNU General Public License (GPL) Version 3.
+
+        The MIT License is recommended for most projects. It is simple and
+        easy to understand and it places almost no restrictions on what you
+        can do with a SyntaxHighlighter project.
+
+        If the GPL suits your project better you are also free to use a
+        SyntaxHighlighter project under that license.
+
+        You don't have to do anything special to choose one license or the
+        other and you don't have to notify anyone which license you are
+        using. You are free to use a SyntaxHighlighter project in
+        commercial projects as long as the copyright header is left intact.
+
+        *ND+*, uses this package under the terms of the 'MIT License'.
+
+                    -------------------------------------
