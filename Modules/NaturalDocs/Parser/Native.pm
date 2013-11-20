@@ -1099,7 +1099,7 @@ sub RichFormatTextBlock #(text)
 
                        # The next character must not be an acceptable character or a closing angle bracket.  This will prevent the URL
                        # from ending early just to get a match.
-                       (?!  [a-z0-9\-\=\~\@\#\%\&\_\+\/\;\:\?\*\>]  )
+                       (?!  [a-z0-9\-\=\~\@\#\%\&\_\+\/\;\:\?\*\>\.]  )
 
                        }
 
@@ -1177,11 +1177,13 @@ sub RichFormatTextBlock #(text)
 
                 if ($linkText =~ /^(?:mailto\:)?((?:[a-z0-9\-_]+\.)*[a-z0-9\-_]+@(?:[a-z0-9\-]+\.)+[a-z]{2,4})$/i)
                     {  $output .= '<email target="' . $1 . '" name="' . $1 . '">';  }
-
+		elsif ($linkText =~ /^(.+?) at ((?:http|https|ftp|ftps|news|file|git)\:.+)/i)
+		    { $output .= '<url target="' . $2 . '" name="' . $1 . '">'; }
                                                             #ND+, links
                 elsif ($linkText =~ /^(?:http|https|ftp|ftps|news|file|git)\:/i)
                     {  $output .= '<url target="' . $linkText . '" name="' . $linkText . '">';  }
-
+		elsif ($linkText =~ /^(.+?) at (.+)/i)
+		    { $output .= '<link target="' . $2 . '" name="' . $1 . '" original="&lt;' . $linkText . '&gt;">'; }
                 else
                     {  $output .= '<link target="' . $linkText . '" name="' . $linkText . '" original="&lt;' . $linkText . '&gt;">';  };
                 }
